@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TuranzaFox | Contact</title>
+  <meta name="description" content="welcome to turanza fox website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="turanza fox, turanzafox, turzafox, turanzafox.github.io" />
+  <!-- utility css file -->
+  <link rel="stylesheet" href="css/utility.css">
+  <!-- style css file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <!-- google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/animate.compat.css">
+
+  <!-- Favicon  -->
+  <link rel="icon" href="assets/head.png">
+
+</head>
+
+<body>
+  <!-- navbar section -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand-and-toggler">
+        <a href="index.html" class="navbar-brand">turanzafox</a>
+        <button type="button" class="navbar-toggler" id="navbar-toggler">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+      </div>
+
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="siklus.html" class="nav-link">siklus</a>
+          </li>
+          <li class="nav-item">
+            <a href="likes.html" class="nav-link">likes</a>
+          </li>
+          <li class="nav-item">
+            <a href="skills.html" class="nav-link">skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">projects</a>
+          </li>
+          <li class="nav-item nav-active">
+            <a href="contact.html" class="nav-link">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar section -->
+
+  <!-- contact page -->
+  <section class="contact container">
+    <div class="title">
+      <h2 class="animated animate__fadeInRight">contact</h2>
+      <div>
+        <h2 class="animated animate__fadeInLeft">get in touch</h2>
+      </div>
+    </div>
+
+    <!---<p class="text">"Tahapan pertama dalam mencari ilmu adalah mendengarkan, kemudian diam dan menyimak dengan penuh
+      perhatian, lalu menjaganya, lalu mengamalkannya dan kemudian menyebarkannya."</p>-->
+
+    <div class="row">
+      <div class="col-left animated fadeInUp">
+        <h2>feel free to ask me!</h2>
+        <p class="text">Malu bertanya, sesat di jalan:)</p>
+
+        <div class="contact-info">
+          <span><i class="fas fa-envelope-open"></i></span>
+          <h3>
+            <span class="text">mail me</span> <br>
+            turanzafox@gmail.com
+          </h3>
+        </div>
+
+        <div class="contact-info">
+          <span><i class="fas fa-phone-square-alt"></i></span>
+          <h3>
+            <span class="text">call me</span> <br>
+            +62 112123 12312
+          </h3>
+        </div>
+
+        <div class="contact-social-links">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://sociabuzz.com/turanzafox/tribe">
+            <i class="far fa-address-card"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCtTp_9tHs67Dd4KCVNACDyA">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://github.com/turanzafox">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-right animated animate__fadeInUp">
+        <div class="contactFrm">
+          <?php if(!empty($notify)){ ?>
+          <p class="notify <?php echo !empty($notifyClass)?$notifyClass:''; ?>">
+            <?php echo $notify; ?>
+          </p>
+          <?php } ?>
+          <form class="contact-form" action="contact.php" method="post">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="your name">
+              <input type="email" name="email" placeholder="your email">
+              <input type="text" name="subject" placeholder="your subject">
+            </div>
+            <textarea rows="5" name="message" placeholder="Tulis pesan Anda disini"></textarea>
+            <input type="submit" name="submit" value="submit" class="btn">
+          </form>
+        </div>
+      </div>
+  </section>
+  <!-- end of contact page -->
+
+
+
+  <!-- footer -->
+  <footer class="footer container">
+    <div class="row">
+      <div class="col">
+        <h3 class="footer-title">about</h3>
+        <p class="text">Hello! Selamat Datang! Di Website Turanza Fox! </p>
+        <p class="text">Aku suka ibadah, makan, minum, berjalan, tidur, kentut, selain itu juga aku <b>Suka Kamu!</b>
+        </p>
+        <strong>Just Kidding!</strong>
+        <div class="social-links">
+          <a href="https://sociabuzz.com/turanzafox/tribe"><i class="far fa-address-card"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/bsenoji_/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3 class="footer-title">links</h3>
+        <div class="footer-links">
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            home
+          </a>
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            about
+          </a>
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            likes
+          </a>
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            contact
+          </a>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3 class="footer-title">more</h3>
+        <div class="footer-links">
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            suka makan!
+          </a>
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            suka tidur!
+          </a>
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            suka kentut!
+          </a>
+          <a href="#" class="text">
+            <i class="fas fa-long-arrow-alt-right"></i>
+            suka Indonesian people!
+          </a>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3 class="footer-title">have a question?</h3>
+        <div>
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          <span class="text">DKI Jakarta, Indonesian</span>
+        </div>
+
+        <div>
+          <span>
+            <i class="fas fa-phone"></i>
+          </span>
+          <span class="text">+62 12345678</span>
+        </div>
+
+        <div>
+          <span>
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="text">turanzafox@gmail.com.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-text">
+      <p class="text">Copyright &copy; 2021 Turanza Fox | Bayu Seno Aji</p>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  <div id="social-icons">
+    <div class="text-right">
+      <ul class="social-icons">
+        <li><a href="https://www.instagram.com/bsenoji_/" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="mailto:turanzafox@gmail.com" title="Email"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCtTp_9tHs67Dd4KCVNACDyA" title="Youtube"><i
+              class="fa fa-youtube-play"></i></a></li>
+        <li><a href="https://sociabuzz.com/turanzafox/tribe" title="SocialBuzz"><i class="far fa-address-card"></i></a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <!-- custom js file -->
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/e7dca1418a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
